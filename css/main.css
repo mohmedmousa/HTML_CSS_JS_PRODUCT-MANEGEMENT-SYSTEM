@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+:root{
+    --main_color:#0f156c;
+}
+body{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    background-color: #333;
+}
+.container{
+    margin: 50px ;
+    position: relative;
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+input{
+    width: 100%;
+    padding: 15px 5px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    background-color: #111;
+    color: white;
+
+
+}
+input:focus{
+    transform: scale(1.01);
+    background-color: black;
+}
+.input .all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.input .all input{
+    width: 20%;
+    
+}
+.input .all .total{
+    background-color: red;
+    padding: 15px 10px ;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.input .all .total::before{
+    content: "total:";
+}
+.input button {
+    width: 100%;
+    height: 35px;
+    background-color: var(--main_color);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+button:hover{
+    letter-spacing: 1px;
+    transition: .5s;
+    cursor: pointer;
+}
+.output .bnts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.output .bnts button{
+    background-color: var(--main_color);
+    border-radius: 20px;
+    padding: 7px 10px;
+    width: 45%;   
+    color: white;
+    font-size: 17px;
+}
+table{
+    margin: 20px 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+table button {
+    background-color: var(--main_color);
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+    border-style: none;
+}
+table button:hover{
+    letter-spacing: 0px;
+    color: #999;
+}
+table th,table td {
+    padding: 5px;
+}
+#del_all{
+    margin: 10px auto;
+    border-radius: 20px ;
+    background-color: var(--main_color);
+    text-align: center;
+    width: 80%;
+}
+#del_all button{
+    background-color: var(--main_color);
+    color: white;
+    width: 100%;
+    padding: 7px 0;
+    font-size: 17px;
+    border-radius: 20px ;
+    
+}

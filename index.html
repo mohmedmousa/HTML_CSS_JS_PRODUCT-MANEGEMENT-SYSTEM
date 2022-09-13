@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full product management system</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PRODUCT MANEGEMENT SYSTEM</h1>
+        <div class="input">
+        <input type="text" placeholder="Title  'Required'" id="title">
+        <div class="all">
+        <input type="number" onkeyup="cost()" placeholder="Price  'Required'" id="price">
+        <input type="number" onkeyup="cost()" placeholder="Taxes" id="taxes">
+        <input type="number" onkeyup="cost()" placeholder="Ads" id="ads">
+        <input type="number" onkeyup="cost()" placeholder="Discount" id="discount">
+        <small class="total"></small>
+        </div>
+        <input type="text" placeholder="Count  'Please enter number less than or equal 1000'" id="count">
+        <input type="text" placeholder="Category  'Required'" id="category">
+        <button id="creat">creat</button>
+        
+
+    </div>
+    
+    <div class="output">
+        
+        <div class="bnts">
+            <button id="search_title">Search by Title</button>
+            <button id="search_category">Search by Category</button>
+        </div>
+        <input type="text" placeholder="search" id="search">
+    </div>
+    <div id="del_all">
+        
+    </div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>TOTAL</th>
+            <th>COUNT</th>
+            <th>CATEGORY</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
+        <tbody id="tbody">
+            
+
+        </tbody>
+        
+    </table>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
